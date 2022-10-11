@@ -14,10 +14,10 @@ module.exports = function(array, opt) {
             y = ~~( i / width )
         var a = alpha.get(x, y, 0)
         var idx = output.index(x, y, 0)
-        result[idx+0] = color[0]
-        result[idx+1] = color[1]
-        result[idx+2] = color[2]
-        result[idx+3] = a
+        result[idx + 0] = a
+        result[idx + 1] = a
+        result[idx + 2] = a
+        result[idx+3] = 255
     }
     return output
 }
